@@ -21,8 +21,8 @@ public class TheProcessor implements ItemProcessor<Data, Data> {
 
 
         //It processes after writing to DB and move it to archive folder
-        String accessKey= "AKIAXUTQR2WHTKC6XSMO";
-        String secretKey="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";
+        String accessKey= "";
+        String secretKey="";
         AWSConfig a2=new AWSConfig();
         AWSCredentialsProvider a3= new AWSStaticCredentialsProvider(new BasicAWSCredentials(accessKey, secretKey));
         AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.US_EAST_1).withCredentials(a3).build();
